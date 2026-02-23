@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Smart Inventory Management</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <h1>🏢 Smart Inventory Management System</h1>
+            <div class="header-actions">
+                <a href="profile.html" class="btn-secondary">👤 Profile</a>
+                <button id="logout-btn" class="btn-logout">Logout</button>
+            </div>
+        </div>
+
+        <div class="dashboard-content">
+            <div class="welcome-card">
+                <h2>Welcome, <span id="user-name"></span>!</h2>
+                <div class="user-info">
+                    <div class="info-item">
+                        <span class="label">Username:</span>
+                        <span class="value" id="user-username"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Email:</span>
+                        <span class="value" id="user-email"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Role:</span>
+                        <span class="badge" id="user-role"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <a href="inventory.html" class="feature-card">
+                    <div class="icon">📦</div>
+                    <h3>Products</h3>
+                    <p>Manage your inventory</p>
+                </a>
+
+                <a href="reports.html" class="feature-card">
+                    <div class="icon">📊</div>
+                    <h3>Reports</h3>
+                    <p>View sales reports</p>
+                </a>
+
+                <div class="feature-card disabled">
+                    <div class="icon">🔔</div>
+                    <h3>Alerts</h3>
+                    <p>Low stock notifications</p>
+                    <small>Coming Soon</small>
+                </div>
+
+                <div class="feature-card disabled">
+                    <div class="icon">📝</div>
+                    <h3>Transactions</h3>
+                    <p>Track movements</p>
+                    <small>Coming Soon</small>
+                </div>
+            </div>
+
+            <div class="info-banner">
+                <h3>✅ Milestone 2 Complete: Product Management</h3>
+                <p><strong id="role-info"></strong></p>
+                <p class="small-text">
+                    Password reset available in Profile • Products and Reports fully functional
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
